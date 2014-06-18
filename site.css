@@ -80,6 +80,8 @@ body {
     
 }
 
+
+
 .row.slide {
     padding: 60px 0px;
 }
@@ -111,7 +113,7 @@ body {
     .row.slide p {
         font-family: 'proximanova-reg', Arial, Verdana;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         color:  #8d8d8d;
     }
 
@@ -212,18 +214,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
-    height: 600px;   
+    height: 700px;   
     margin-bottom: 80px;
 }
 
     .hero h1 {
-        padding-top: 420px;
+        padding-top: 500px;
         font-family: 'maven_pro_light300', Arial, Verdana;
         font-size: 45px;      
         font-weight: bold;
         color: #fff;
         text-align: center;
     }
+	
+.hero_candidato {
+    background-image: url(../img/hero-candidato.png) !important;
+	margin-bottom: 0px !important;
+}
 
 .hero_inner {
     background-image: url(../img/hero.png);
@@ -234,7 +241,7 @@ body {
     margin-bottom: 20px;
 }
 
-    .hero_inner h1, .hero-inst h1, .hero-cont h1, .hero-emp h1, .hero-resp h1 {
+    .hero_inner h1 {
         padding-top: 320px;
         font-family: 'maven_pro_light300', Arial, Verdana;
         font-size: 45px;      
@@ -243,20 +250,37 @@ body {
         text-align: left;
     }
 
-.inst {
-     background-image: url(../img/hero-inst.jpg);
+
+.candidato_search {
+	border-bottom: solid 3px #e2e3e5;
 }
 
-.resp {
-     background-image: url(../img/hero-resp.jpg);
+	.candidato_search .inline-list {
+		margin-bottom: 0px;
+	}
+	
+		.candidato_search .inline-list li > a {
+			font-family: 'proximanova-reg', Arial, Verdana;
+			font-size: 16px;
+			font-weight: 400;
+			margin-right: 40px;
+			color: #000;
+			padding: 10px 0px;
+		}
+		
+			.candidato_search .inline-list li > a.active {
+				border-bottom: solid 3px #f9c60e;
+			}
+	
+
+.earth {
+     background-image: url(../img/hero-earth.png);
 }
 
-.emp {
-     background-image: url(../img/hero-emp.jpg);
-}
-
-.cont {
-     background-image: url(../img/hero-cont.jpg);
+a.yellow {
+	font-family: 'proximanova-reg', Arial, Verdana;
+	font-size: 16px;
+	color: #f9c60e;
 }
 
 .yellow-bg {
@@ -270,13 +294,35 @@ body {
     .yellow-bg .row.slide p {
         color: #000;    
     }
+	
+	
+.gray-bg2 {
+	background-color: #f1f2f4
+}
+
+	.gray-bg2 form {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+		.gray-bg2 form input[type='text'] {
+			 font-family: 'proximanova-reg', Arial, Verdana;
+			 font-size: 16px;
+			 color: #858a95;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			 border-radius: 5px;
+			 background-color: #e6e8eb;
+			 box-shadow: none;
+			 transition: none;
+			 border: none;
+		}
 
 .gray-bg {
     background-color: #efefef;
     padding: 40px 0px;
 }
 
-    
     .gray-bg .row.slide a.button {
         -webkit-border-radius: 25px;
          border-radius: 25px; 
@@ -322,6 +368,120 @@ body {
     .gray_inner-bg .row.slide {
         padding: 40px 0px;
     }
+	
+.vaga, .vaga_detail {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	 border-top-left-radius: 10px;
+	 border-bottom-right-radius: 10px;
+	 background-color: #fff;
+	 border: solid 10px #f1f2f4;
+	 border-top: solid 20px #f1f2f4;
+	 border-bottom: solid 20px #f1f2f4;	 
+}
+
+	.vaga p.new {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 16px;
+		color: #f9c60e;
+		padding-top: 20px;
+	}
+
+	.vaga h3 {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 23px;
+		color: #000;
+		padding-top: 63px;
+	}
+	
+		.vaga p.new + h3 {
+			padding-top: 0px;
+		}
+
+	.vaga p, .vaga_detail p {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 16px;
+		color: #a4a4a4;
+	}
+
+	.vaga a.button, a.button.pagging {
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		 border-radius: 10px;
+		 background-color: #b9bdc5;
+		 font-family: 'proximanova-reg', Arial, Verdana;
+		 font-size: 16px;
+		 color: #fff;
+		 padding: 15px 35px;
+	}
+	
+	a.button.pagging {
+		margin-top: 60px;
+		background-color: #858a95;
+	}
+	
+.slide.yellow-bg.nopad {
+	border-bottom: solid 20px #f1f2f4;	 
+}
+		
+	.slide.yellow-bg.nopad p {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 18px;
+		color: #fff;
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+	
+	.slide.yellow-bg.nopad a.button {
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		 border-radius: 5px;
+		 font-family: 'proximanova-reg', Arial, Verdana;
+		 font-size: 18px;
+		 color: #000;
+		 background-color: #fff;
+	}
+	
+.vaga_detail {
+	padding: 40px 40px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+	.vaga_detail h3 {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 33px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	
+	.vaga_detail h3 + p > b {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 14px;
+		color: #000;
+		text-transform: uppercase;
+	}
+
+	.vaga_detail h4 {
+		font-family: 'proximanova-reg', Arial, Verdana;
+		font-size: 16px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	
+	a.button.back {
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		 border-radius: 5px;
+		 background-color: #3e3b3b;
+		 font-family: 'proximanova-reg', Arial, Verdana;
+		 font-size: 16px;
+		 color: #fff;
+		 margin-top: 40px;
+	}
 
 .red-box {
     -webkit-border-top-left-radius: 25px;
@@ -566,11 +726,28 @@ body {
     color: #353434;  
 }
 
-.form_ticket input:-ms-input-placeholder, .form_ticket textarea:-ms-input-placeholder {  
-    font-family: 'maven_pro_light300', Arial, Verdana;
-    font-weight: 700;
-    font-size: 14px;    
-    color: #353434;  
+.gray-bg2 input::-webkit-input-placeholder, .gray-bg2 textarea::-webkit-input-placeholder {
+    font-family: 'proximanova-reg', Arial, Verdana;
+    font-size: 16px;    
+    color: #858a95;  
+}
+
+.gray-bg2 input:-moz-placeholder, .gray-bg2 textarea:-moz-placeholder { /* Firefox 18- */
+    font-family: 'proximanova-reg', Arial, Verdana;
+    font-size: 16px;    
+    color: #858a95;  
+}
+
+.gray-bg2 input::-moz-placeholder, .gray-bg2 textarea::-moz-placeholder {  /* Firefox 19+ */
+    font-family: 'proximanova-reg', Arial, Verdana;
+    font-size: 16px;    
+    color: #858a95;  
+}
+
+.gray-bg2 input:-ms-input-placeholder, .gray-bg2 textarea:-ms-input-placeholder {  
+    font-family: 'proximanova-reg', Arial, Verdana;
+    font-size: 16px;    
+    color: #858a95;  
 }
 
 .top-bar, .top-bar-section, .top-bar-section ul, .top-bar-section li:not(.has-form) a:not(.button), 
@@ -623,7 +800,7 @@ body {
 .top-bar-section > ul > li:not(.has-form) > a:not(.button) {
     font-family: 'maven_pro_light300', Arial, Verdana;
     font-weight: 300;
-    font-size: 15px;           
+    font-size: 17px;           
 }
 
 @media only screen and (min-width: 64.063em) {
